@@ -4,5 +4,6 @@ from apsystemsecuscraper import APSystemsECUScraper
 
 ap = APSystemsECUScraper('config.ini')
 ap.get_data()
+ap.get_extended_data()
 if ap.ecudata:
     ap.export_status_data_to_pvoutput()
